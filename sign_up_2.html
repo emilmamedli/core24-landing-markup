@@ -6,6 +6,7 @@
     <title>Document</title>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap-pincode-input.css">
     <link rel="stylesheet" href="css/style.css">
 
 </head>
@@ -32,9 +33,20 @@
                             </div>
                         </div>
                         <form action="">
-                            <div class="form-group mt-3">
-                                <label for="#number" class="input-label">Mobil nömrəniz</label>
-                                <input type="text" class="form-control" id="number" placeholder="+994 00 000 00 00">
+                            <div class="text-center form-block-title">Enter the code from SMS that we sent to the number  +799842 ••••• 14</div>
+                            <div class="form-block-body-pincode">
+                                <div class="row">
+                                    <div class="col d-flex justify-content-center">
+                                        <div class="px-lg-5 pincode-container">
+                                            <input type="text" name="mycode" id="pincode-input1" style="display:none">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col text-center">
+                                    <a href="#" class="btn p-0 btn-change-password text-blue">Yenidən göndər</a>
+                                </div>
                             </div>
                             <button class="btn btn-login-submit">Davam et</button>
                         </form>
@@ -48,5 +60,12 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="js/bootstrap-pincode-input.js"></script>
+    <script>
+
+        $('#pincode-input1').pincodeInput({hidedigits:false,inputs:4});
+        $('.pincode-input-text').attr('placeholder', '0');
+
+    </script>
 </body>
 </html>

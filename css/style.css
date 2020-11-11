@@ -111,3 +111,51 @@ input[type=number]:focus,
     font-weight: 400;
     color: #828282;
 }
+
+.form-block-title {
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #000000;
+}
+
+.forgot-password {
+    margin: 1rem;
+    text-align: center;
+    font-size: .9rem;
+    font-weight: 700;
+    text-decoration: underline;
+    color: #343836;
+}
+
+.pincode-input-container {
+    display: inline-flex;
+    width: 100%;
+}
+
+input[type="text"].pincode-input-text {
+    width: 1.6rem;
+    border: 0 solid transparent;
+    border-bottom: 0.15rem solid #000000;
+    margin: 0.7rem;
+    height: 4rem;
+    font-weight: 500;
+    font-size: 1.5rem;
+    border-radius: 0;
+    padding: 0;
+}
+
+.pincode-input-text::placeholder {
+    color: #E0E0E0;
+}
+
+.pincode-input-text:focus {
+    border-bottom: 0.15rem solid #E0E0E0 !important;
+}
+
+.btn-change-password {
+    margin: 1rem;
+    font-size: .7rem;
+    font-weight: 600;
+    color: #2F80ED;
+}
