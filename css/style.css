@@ -1,5 +1,19 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Quicksand', sans-serif;
+    position: relative;
+    margin-top: 8rem;
+}
+
+.container {
+    min-width: 90%
+}
+
+.logo {
+    height: 3rem;
 }
 
 .bg-image-container {
@@ -25,6 +39,7 @@ body {
 
 .login-block {
     padding: 2rem;
+    max-width: 35rem;
 }
 
 .btn-lang {
@@ -155,7 +170,192 @@ input[type="text"].pincode-input-text {
 
 .btn-change-password {
     margin: 1rem;
-    font-size: .7rem;
+    font-size: .9rem;
     font-weight: 600;
     color: #2F80ED;
+}
+
+.btn-rounded {
+    padding: 0.6rem 1.5rem;
+    font-size: .9rem;
+    font-weight: 600;
+    color: #FFFFFF;
+    border-radius: 2rem;
+}
+
+.btn-custom-submit {
+    height: 2.5rem;
+    background-color: #5FC98B;
+    font-size: .9rem;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+.btn img {
+    width: 1rem;
+    margin-right: 0.5rem;
+}
+
+.bnt-custom-1 {
+    background-color: #EB5757;
+}
+
+.bnt-custom-2 {
+    background-color: #00AD9D;
+    color: #FFFFFF;
+}
+
+.btn-custom-dark {
+    height: 2.5rem;
+    background-color: #212839;
+    font-size: .9rem;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+.btn-custom-light {
+    height: 2.5rem;
+    background-color: #FFFFFF;
+    font-size: .9rem;
+    font-weight: 700;
+    color: #000000;
+}
+
+.btn-bordered {
+    box-shadow: 0 0 0.2rem 0 rgba(0, 0, 0, 0.25);
+}
+
+.language-select {
+    width: 3.3rem;
+    height: 1.8rem;
+    padding: 0;
+    padding-left: 0.3rem;
+}
+
+#main-nav-1 {
+    box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.08);
+}
+
+.nav-item {
+    margin-right: 3rem;
+}
+
+.nav-link {
+    font-weight: 700;
+    color: #000000;
+}
+
+.swiper-main .swiper-slide {
+    background: radial-gradient(
+        38.83% 155.4% at 76.98% 61.17%,
+         rgb(255, 255, 255) 0%, 
+         rgba(232, 245, 234, 0.81) 100%), 
+         linear-gradient(0deg, rgb(244, 247, 255), 
+         rgb(244, 247, 255));
+    height: 75vh;
+}
+
+.slider-title {
+    margin-top: 5rem;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.slider-title-2 {
+    margin-top: 5rem;
+    font-size: 2.6rem;
+    font-weight: 700;
+}
+
+.slider-text {
+    margin-top: 2.5rem;
+    font-weight: 600;
+}
+
+.slider-img {
+    height: 75vh;
+}
+
+.slider-dot-1-current {
+    width: 1.5rem;
+    height: 1.5rem;
+    display: inline-block;
+    background-image: url(../image/slider-dot-1-current.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 20000;
+}
+
+.slider-dot-1 {
+    width: 1.5rem;
+    height: 1.5rem;
+    display: inline-block;
+    background-image: url(../image/slider-dot-1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.text-custom-1 {
+    font-weight: 300;
+    color: #333333;
+}
+
+.cicle-light {
+    width: 4rem;
+    height: 4rem;
+    padding-top: 1rem;
+    border-radius: 50%;
+    background-color: #F2F2F2;
+}
+
+.cicle-light img {
+    width: 1.5rem;
+}
+
+.title-custom-1 {
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.text-custom-2 {
+    font-weight: 400;
+}
+
+#consultation {
+    background-color: #F3F6F3;
+}
+
+.button-container {
+    width: fit-content;
+    padding: .25rem;
+    border-radius: 2.2rem;
+    background-color: #FFFFFF;
+}
+
+.slider-card {
+    border-radius: 0.5rem;
+}
+
+.slider-card-img {
+    
+}
+
+.slider-card-text {
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    body {
+        margin-top: 4rem;
+    }
+
+    /* #navbar-container {
+        top: 0;
+        left: 1000rem;
+        bottom: 0;
+        right: 0;
+        background-color: #FFFFFF;
+        position: absolute;
+        z-index: 1000;
+    } */
 }
