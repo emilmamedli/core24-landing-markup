@@ -6,7 +6,9 @@
     <title>Document</title>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"> -->
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
     <link rel="stylesheet" href="css/style.css">
 
 </head>
@@ -73,42 +75,39 @@
             </div>
         </div>
     </header>
-    <section id="main-slider">
-        <div class="swiper-container swiper-main">
-            <div class="swiper-wrapper">
+    <section id="slider-main">
+        <div class="slider-main">
 
-                <div class="swiper-slide">
-                        <div class="container">
-                        <div class="row">
-                            <div class="col-md-7">
-                                <h2 class="slider-title" data-swiper-parallax="-100">Cəmi bir neçə dəqiqəyə peşəkar həkim məsləhəti</h2>
-                                <p  class="slider-text" data-swiper-parallax="-200">Xəstəxanaya getmədən  •  Növbə gözləmədən  •  Onlayn müayinə</p>
-                                <button class="btn bnt-custom-2 mt-4" data-swiper-parallax="-100"><img src="image/stethoscope.png" alt=""> Həkimə yazıl</button>
-                            </div>
-                            <div class="col-md-3">
-                                <img src="image/doctor.png" alt="" class="d-none d-md-block slider-img" height="150px" data-swiper-parallax="-500">
-                            </div>
+            <div class="slide">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-7">
+                            <h2 class="slider-title">Cəmi bir neçə dəqiqəyə peşəkar həkim məsləhəti</h2>
+                            <p  class="slider-text">Xəstəxanaya getmədən  •  Növbə gözləmədən  •  Onlayn müayinə</p>
+                            <button class="btn bnt-custom-2 mt-4"><img src="image/stethoscope.png" alt=""> Həkimə yazıl</button>
                         </div>
-                    </div>                    
-                </div>
-
-                <div class="swiper-slide">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-7">
-                                <h2 class="slider-title" data-swiper-parallax="-100">Cəmi bir neçə dəqiqəyə peşəkar həkim məsləhəti</h2>
-                                <p  class="slider-text" data-swiper-parallax="-200">Xəstəxanaya getmədən  •  Növbə gözləmədən  •  Onlayn müayinə</p>
-                                <button class="btn bnt-custom-2 mt-4" data-swiper-parallax="-100"><img src="image/stethoscope.png" alt=""> Həkimə yazıl</button>
-                            </div>
-                            <div class="col-md-3">
-                                <img src="image/doctor.png" alt="" class="d-none d-md-block slider-img" height="150px" data-swiper-parallax="-500">
-                            </div>
+                        <div class="col-md-3">
+                            <img src="image/doctor.png" alt="" class="d-none d-md-block slider-img" height="150px">
                         </div>
-                    </div>                                    
-                </div>
-
+                    </div>
+                </div>                    
             </div>
-            <span class="swiper-pagination swiper-pag"></span>
+
+            <div class="slide">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-7">
+                            <h2 class="slider-title">Cəmi bir neçə dəqiqəyə peşəkar həkim məsləhəti</h2>
+                            <p  class="slider-text">Xəstəxanaya getmədən  •  Növbə gözləmədən  •  Onlayn müayinə</p>
+                            <button class="btn bnt-custom-2 mt-4" data-swiper-parallax="-100"><img src="image/stethoscope.png" alt=""> Həkimə yazıl</button>
+                        </div>
+                        <div class="col-md-3">
+                            <img src="image/doctor.png" alt="" class="d-none d-md-block slider-img" height="150px" data-swiper-parallax="-500">
+                        </div>
+                    </div>
+                </div>                                    
+            </div>
+
         </div>
     </section>
     <section id="advantages">
@@ -119,39 +118,36 @@
                     <p class="text-custom-1">The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested.</p>
                 </div>
             </div>
-            <div class="swiper-container swiper-container-advantages">
-                <div class="swiper-wrapper pb-5">
+            <div class="slider-advantages">
     
-                    <div class="swiper-slide text-center text-md-left">
-                        <div class="text-center cicle-light mb-3 mx-auto ml-md-0"><img src="image/stethoscope-2-dark.png" alt=""></div>
-                        <h2 class="title-custom-1 mb-2">Peşəkar həkimlər</h2>
-                        <p class="text-custom-2">The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested.</p>
-                    </div>
-    
-                    <div class="swiper-slide text-center text-md-left">
-                        <div class="text-center cicle-light mb-3 mx-auto ml-md-0"><img src="image/wall-clock-dark.png" alt=""></div>
-                        <h2 class="title-custom-1 mb-2">Hər zaman yanınızda</h2>
-                        <p class="text-custom-2">The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested.</p>
-                    </div>
-
-                    <div class="swiper-slide text-center text-md-left">
-                        <div class="text-center cicle-light mb-3 mx-auto ml-md-0"><img src="image/padlock-dark.png" alt=""></div>
-                        <h2 class="title-custom-1 mb-2">Məxfi konsultasiya</h2>
-                        <p class="text-custom-2">The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested.</p>
-                    </div>
-
-                    <div class="swiper-slide text-center text-md-left">
-                        <div class="text-center cicle-light mb-3 mx-auto ml-md-0"><img src="image/search-dark.png" alt=""></div>
-                        <h2 class="title-custom-1 mb-2">Kondultasiya tarixçəniz</h2>
-                        <p class="text-custom-2">The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested.</p>
-                    </div>
-    
+                <div class="slide text-center text-md-left">
+                    <div class="text-center cicle-light mb-3 mx-auto ml-md-0"><img src="image/stethoscope-2-dark.png" alt=""></div>
+                    <h2 class="title-custom-1 mb-2">Peşəkar həkimlər</h2>
+                    <p class="text-custom-2">The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested.</p>
                 </div>
-                <div class="swiper-pagination swiper-pag"></div>
+
+                <div class="slide text-center text-md-left">
+                    <div class="text-center cicle-light mb-3 mx-auto ml-md-0"><img src="image/wall-clock-dark.png" alt=""></div>
+                    <h2 class="title-custom-1 mb-2">Hər zaman yanınızda</h2>
+                    <p class="text-custom-2">The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested.</p>
+                </div>
+
+                <div class="slide text-center text-md-left">
+                    <div class="text-center cicle-light mb-3 mx-auto ml-md-0"><img src="image/padlock-dark.png" alt=""></div>
+                    <h2 class="title-custom-1 mb-2">Məxfi konsultasiya</h2>
+                    <p class="text-custom-2">The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested.</p>
+                </div>
+
+                <div class="sslide text-center text-md-left">
+                    <div class="text-center cicle-light mb-3 mx-auto ml-md-0"><img src="image/search-dark.png" alt=""></div>
+                    <h2 class="title-custom-1 mb-2">Kondultasiya tarixçəniz</h2>
+                    <p class="text-custom-2">The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested.</p>
+                </div>    
+                
             </div>
         </div>
     </section>
-    <!-- <span class="slider-dot-1-current"></span> -->
+
     <section id="consultation">
         <div class="container">
             <div class="row justify-content-center">
@@ -169,7 +165,7 @@
                     <div class="swiper-container swiper-container-consultation">
                         <div class="swiper-wrapper pb-5">
             
-                            <div class="swiper-slide slider-card bg-white">
+                            <div class="swiper-slide bg-white">
                                 <div class="slider-card">
                                     <img src="image/headache.png" class="slider-card-img" alt="">
                                     <p class="slider-card-text">Baş ağrısı</p>
@@ -201,108 +197,155 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script type="module">
+    <script src="js/slick.min.js"></script>
+    <!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
+    <script>
+
+        $(document).ready(function() {
+
+            $('.slider-main').slick({
+                infinite: true,
+                speed: 500,
+                dots: true,
+                // appendDots: $(this).siblings('.dots-container'),
+                arrows: false,
+                autoplay: true,
+                autoplaySpeed: 3000,
+                pauseOnHover: true,
+                pauseOnDotsHover: true,
+            });
+
+            advantages
+
+            $('.slider-advantages').slick({
+                infinite: true,
+                speed: 500,
+                dots: true,
+                // appendDots: $(this).siblings('.dots-container'),
+                arrows: false,
+                responsive: [
+                    {
+                        breakpoint: 0,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                            // dots: false
+                        }
+                    },
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 4,
+                            slidesToScroll: 4,
+                            // dots: false
+                        }
+                    }
+                    // You can unslick at a given breakpoint now by adding:
+                    // settings: "unslick"
+                    // instead of a settings object
+                ]
+            });
+        });
         
-        var mySwiper = new Swiper('.swiper-main', {
-            speed: 900,
-            loop: true,
-            parallax: true,
-            spaceBetween: 10,
-            updateOnWindowResize: true,
+        // var mySwiper = new Swiper('.swiper-main', {
+        //     speed: 900,
+        //     loop: true,
+        //     parallax: true,
+        //     spaceBetween: 10,
+        //     updateOnWindowResize: true,
 
-            autoplay: {
-                delay: 3000,
-                disableOnInteraction: false,
-            },
+        //     autoplay: {
+        //         delay: 3000,
+        //         disableOnInteraction: false,
+        //     },
 
-            // If we need pagination
+        //     // If we need pagination
 
-            pagination: '.swiper-pagination',
-            paginationClickable: true,
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-                // type: 'custom',
-            },
-            // paginationCustomRender: function(swiper, current, total) {
-            //     console.log('fuck', swiper, current, total);
-            //         for (let i = 1; i <= total; i++) {
-            //             if (current == i) {
-            //                 text = '<span class="slider-dot-1-current">0</span>';
-            //             } else {
-            //                 text = '<span class="slider-dot-1">1</span>';
-            //             }
-            //         }
-            //         return text;
-            //     },
+        //     pagination: '.swiper-pagination',
+        //     paginationClickable: true,
+        //     pagination: {
+        //         el: '.swiper-pagination',
+        //         clickable: true,
+        //         // type: 'custom',
+        //     },
+        //     // paginationCustomRender: function(swiper, current, total) {
+        //     //     console.log('fuck', swiper, current, total);
+        //     //         for (let i = 1; i <= total; i++) {
+        //     //             if (current == i) {
+        //     //                 text = '<span class="slider-dot-1-current">0</span>';
+        //     //             } else {
+        //     //                 text = '<span class="slider-dot-1">1</span>';
+        //     //             }
+        //     //         }
+        //     //         return text;
+        //     //     },
 
-                // renderBullet: function(swiper, current, total) {
-                //     for (let i = 1; i <= total; i++) {
-                //         if (current == i) {
-                //             text = '<span class="slider-dot-1-current"></span>';
-                //         } else {
-                //             text = '<span class="slider-dot-1"></span>';
-                //         }
-                //     }
-                //     return text;
-                // },
+        //         // renderBullet: function(swiper, current, total) {
+        //         //     for (let i = 1; i <= total; i++) {
+        //         //         if (current == i) {
+        //         //             text = '<span class="slider-dot-1-current"></span>';
+        //         //         } else {
+        //         //             text = '<span class="slider-dot-1"></span>';
+        //         //         }
+        //         //     }
+        //         //     return text;
+        //         // },
 
-            // Navigation arrows
-            // navigation: {
-            //     nextEl: '.swiper-button-next',
-            //     prevEl: '.swiper-button-prev',
-            // },
-            // paginationType: 'custom',
+        //     // Navigation arrows
+        //     // navigation: {
+        //     //     nextEl: '.swiper-button-next',
+        //     //     prevEl: '.swiper-button-prev',
+        //     // },
+        //     // paginationType: 'custom',
             
             
-        })
+        // })
 
-        var mySwiper2 = new Swiper('.swiper-container-advantages', {
-            speed: 700,
-            loop: true,
-            spaceBetween: 20,
-            updateOnWindowResize: true,
-            slidesPerView: 1,
-            pagination: '.swiper-pagination',
-            paginationClickable: true,
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            },            
-            breakpoints: {
-                768: {
-                    slidesPerView: 4,
-                    noSwiping: false,
-                    allowSlidePrev: false,
-                    allowSlideNext: false,
-                    pagination: false
-                },
-            }            
-        })
+        // var mySwiper2 = new Swiper('.swiper-container-advantages', {
+        //     speed: 700,
+        //     loop: true,
+        //     spaceBetween: 20,
+        //     updateOnWindowResize: true,
+        //     slidesPerView: 1,
+        //     pagination: '.swiper-pagination',
+        //     paginationClickable: true,
+        //     pagination: {
+        //         el: '.swiper-pagination',
+        //         clickable: true,
+        //     },            
+        //     breakpoints: {
+        //         768: {
+        //             slidesPerView: 4,
+        //             noSwiping: false,
+        //             allowSlidePrev: false,
+        //             allowSlideNext: false,
+        //             pagination: false
+        //         },
+        //     }            
+        // })
 
-        var mySwiper3 = new Swiper('.swiper-container-consultation', {
-            speed: 700,
-            loop: true,
-            spaceBetween: 20,
-            updateOnWindowResize: true,
-            slidesPerView: 1,
-            pagination: '.swiper-pagination',
-            paginationClickable: true,
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            },            
-            breakpoints: {
-                768: {
-                    slidesPerView: 3,
-                    noSwiping: false,
-                    allowSlidePrev: false,
-                    allowSlideNext: false,
-                    pagination: false
-                },
-            }            
-        })
+        // var mySwiper3 = new Swiper('.swiper-container-consultation', {
+        //     speed: 700,
+        //     loop: true,
+        //     // spaceBetween: 20,
+        //     // updateOnWindowResize: true,
+        //     slidesPerView: 1,
+        //     pagination: '.swiper-pagination',
+        //     paginationClickable: true,
+        //     pagination: {
+        //         el: '.swiper-pagination',
+        //         clickable: true,
+        //     },            
+        //     breakpoints: {
+        //         768: {
+        //             slidesPerView: 3,
+        //             noSwiping: false,
+        //             allowSlidePrev: false,
+        //             allowSlideNext: false,
+        //             pagination: false
+        //         },
+        //     }            
+        // })
 
       </script>
 </body>

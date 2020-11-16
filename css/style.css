@@ -194,6 +194,7 @@ input[type="text"].pincode-input-text {
 .btn img {
     width: 1rem;
     margin-right: 0.5rem;
+    display: inline-block;
 }
 
 .bnt-custom-1 {
@@ -245,14 +246,19 @@ input[type="text"].pincode-input-text {
     color: #000000;
 }
 
-.swiper-main .swiper-slide {
+.slider-main .slide {
     background: radial-gradient(
         38.83% 155.4% at 76.98% 61.17%,
          rgb(255, 255, 255) 0%, 
          rgba(232, 245, 234, 0.81) 100%), 
          linear-gradient(0deg, rgb(244, 247, 255), 
          rgb(244, 247, 255));
+    background-color: rgba(232, 245, 234, 0.81);
     height: 75vh;
+}
+
+.slide:focus {
+    outline: none;
 }
 
 .slider-title {
@@ -336,9 +342,9 @@ input[type="text"].pincode-input-text {
     border-radius: 0.5rem;
 }
 
-.slider-card-img {
+/* .slider-card-img {
     
-}
+} */
 
 .slider-card-text {
     font-weight: 600;
