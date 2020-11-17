@@ -108,6 +108,21 @@
                 </div>                                    
             </div>
 
+            <div class="slide">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-7">
+                            <h2 class="slider-title">Cəmi bir neçə dəqiqəyə peşəkar həkim məsləhəti</h2>
+                            <p  class="slider-text">Xəstəxanaya getmədən  •  Növbə gözləmədən  •  Onlayn müayinə</p>
+                            <button class="btn bnt-custom-2 mt-4" data-swiper-parallax="-100"><img src="image/stethoscope.png" alt=""> Həkimə yazıl</button>
+                        </div>
+                        <div class="col-md-3">
+                            <img src="image/doctor.png" alt="" class="d-none d-md-block slider-img" height="150px" data-swiper-parallax="-500">
+                        </div>
+                    </div>
+                </div>                                    
+            </div>
+
         </div>
     </section>
     <section id="advantages">
@@ -203,19 +218,20 @@
 
         $(document).ready(function() {
 
-            $('.slider-main').slick({
+            $('#slider-main').slick({
                 infinite: true,
                 speed: 500,
-                dots: true,
-                // appendDots: $(this).siblings('.dots-container'),
                 arrows: false,
                 autoplay: true,
                 autoplaySpeed: 3000,
                 pauseOnHover: true,
                 pauseOnDotsHover: true,
+                dots: true,
+                // appendDots: $(this).siblings('.dots-container'),
+                customPaging: function(slider, i) {
+                    return '<div class="slider-dot-1"></div>';
+                },
             });
-
-            advantages
 
             $('.slider-advantages').slick({
                 infinite: true,
@@ -223,20 +239,20 @@
                 dots: true,
                 // appendDots: $(this).siblings('.dots-container'),
                 arrows: false,
-                responsive: [
-                    {
-                        breakpoint: 0,
-                        settings: {
-                            slidesToShow: 1,
-                            slidesToScroll: 1,
-                            // dots: false
-                        }
-                    },
+                responsive: [                    
                     {
                         breakpoint: 768,
                         settings: {
                             slidesToShow: 4,
                             slidesToScroll: 4,
+                            // dots: false
+                        }
+                    },
+                    {
+                        breakpoint: 0,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
                             // dots: false
                         }
                     }
