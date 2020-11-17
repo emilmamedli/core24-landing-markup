@@ -175,35 +175,71 @@
                     </div>
                 </div>
             </div>
-            <div class="row justify-content-center">
-                <div class="col col-md-7">
-                    <div class="swiper-container swiper-container-consultation">
-                        <div class="swiper-wrapper pb-5">
+            <div class="row justify-content-center mt-5">
+                <div class="col col-md-6">
+                    <div class="slider-consultation">
             
-                            <div class="swiper-slide bg-white">
-                                <div class="slider-card">
-                                    <img src="image/headache.png" class="slider-card-img" alt="">
-                                    <p class="slider-card-text">Baş ağrısı</p>
-                                </div>
+                        <div class="slide">
+                            <div class="slider-card bg-white">
+                                <img src="image/headache.png" class="slider-card-img" alt="">
+                                <p class="slider-card-text">Baş ağrısı</p>
                             </div>
-
-                            <div class="swiper-slide bg-white">
-                                <div class="slider-card"></div>
-                                    <img src="image/flu.png" class="slider-card-img" alt="">
-                                    <p class="slider-card-text">Soyuqdəymə və qrip</p>
-                                </div>
-                            </div>
-
-                            <div class="swiper-slide bg-white">
-                                <div class="slider-card"></div>
-                                    <img src="image/sore-throat.png" class="slider-card-img" alt="">
-                                    <p class="slider-card-text">Boğaz agrısı</p>
-                                </div>
-                            </div>
-            
                         </div>
-                        <div class="swiper-pagination swiper-pag"></div>
+
+                        <div class="slide">
+                            <div class="slider-card slider-card-shadow bg-white">
+                                <img src="image/flu.png" class="slider-card-img" alt="">
+                                <p class="slider-card-text">Soyuqdəymə və qrip</p>
+                            </div>
+                        </div>
+
+                        <div class="slide">
+                            <div class="slider-card bg-white">
+                                <img src="image/sore-throat.png" class="slider-card-img" alt="">
+                                <p class="slider-card-text">Boğaz agrısı</p>
+                            </div>
+                        </div>
+            
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="how-it-works">
+        <div class="container">
+            <div class="row">
+                <div class="col text-center">
+                    <h2 class="slider-title-2 mb-5">Necə işləyir?</h2>
+                </div>
+            </div>
+            <div class="row justify-content-between my-3">
+                <div class="col-12 col-md text-center mb-5 px-md-5">
+                    <div class="cicle-light bg-color-1 mx-auto"><img src="image/wall-clock-dark.png" alt=""></div>
+                    <p class="text-custom-3">Saytdan qeydiyyatdan keçin və kabinetinizə daxil olun</p>
+                </div>
+                <div class="col-12 col-md text-center mb-5 px-md-5">
+                    <div class="cicle-light bg-color-1 mb-3 mx-auto"><img src="image/wall-clock-dark.png" alt=""></div>
+                    <p class="text-custom-3">Şəxsi kabinetinizdən həkim və ya şikayətlərinizi seçin</p>
+                </div>
+                <div class="col-12 col-md text-center mb-5 px-md-5">
+                    <div class="cicle-light bg-color-1 mb-3 mx-auto"><img src="image/wall-clock-dark.png" alt=""></div>
+                    <p class="text-custom-3">Konsultasiyaya başlayın, online chat və ya zəng vasitəsilə</p>
+                </div>
+                <div class="col-12 col-md text-center mb-5 px-md-5">
+                    <div class="cicle-light bg-color-1 mb-3 mx-auto"><img src="image/wall-clock-dark.png" alt=""></div>
+                    <p class="text-custom-3">Konsultasiya, anamnez və dizagnoz tarixçənizi izləyin</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="doctors">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col col-md-6 text-center">
+                    <h2 class="slider-title-2 mb-3">Həkimlər</h2>
+                    <p class="text-custom-1">The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested.</p>
                 </div>
             </div>
         </div>
@@ -218,7 +254,7 @@
 
         $(document).ready(function() {
 
-            $('#slider-main').slick({
+            $('.slider-main').slick({
                 infinite: true,
                 speed: 500,
                 arrows: false,
@@ -231,7 +267,10 @@
                 customPaging: function(slider, i) {
                     return '<div class="slider-dot-1"></div>';
                 },
+                slidesToShow: 1,
+                slidesToScroll: 1,
             });
+            
 
             $('.slider-advantages').slick({
                 infinite: true,
@@ -239,129 +278,57 @@
                 dots: true,
                 // appendDots: $(this).siblings('.dots-container'),
                 arrows: false,
+                slidesToShow: 4,
+                slidesToScroll: 4,
+                swipe: false,
+                dots: false,
                 responsive: [                    
                     {
                         breakpoint: 768,
                         settings: {
-                            slidesToShow: 4,
-                            slidesToScroll: 4,
-                            // dots: false
-                        }
-                    },
-                    {
-                        breakpoint: 0,
-                        settings: {
                             slidesToShow: 1,
                             slidesToScroll: 1,
-                            // dots: false
+                            swipe: true,
+                            dots: true,
                         }
                     }
-                    // You can unslick at a given breakpoint now by adding:
-                    // settings: "unslick"
-                    // instead of a settings object
                 ]
             });
+
+
+            $('.slider-consultation').slick({
+                // infinite: true,
+                speed: 500,
+                dots: true,
+                // appendDots: $(this).siblings('.dots-container'),
+                arrows: false,
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                centerMode: false,
+                variableWidth: false,
+                swipe: false,
+                dots: false,
+                responsive: [                    
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 3,
+                            swipe: true,
+                            dots: true,
+                            centerMode: true,
+                            variableWidth: true,
+                            focusOnSelect: true,
+                            // initialSlide: 1,
+                        }
+                    }
+                ],
+            });
+
+
+
+
         });
-        
-        // var mySwiper = new Swiper('.swiper-main', {
-        //     speed: 900,
-        //     loop: true,
-        //     parallax: true,
-        //     spaceBetween: 10,
-        //     updateOnWindowResize: true,
-
-        //     autoplay: {
-        //         delay: 3000,
-        //         disableOnInteraction: false,
-        //     },
-
-        //     // If we need pagination
-
-        //     pagination: '.swiper-pagination',
-        //     paginationClickable: true,
-        //     pagination: {
-        //         el: '.swiper-pagination',
-        //         clickable: true,
-        //         // type: 'custom',
-        //     },
-        //     // paginationCustomRender: function(swiper, current, total) {
-        //     //     console.log('fuck', swiper, current, total);
-        //     //         for (let i = 1; i <= total; i++) {
-        //     //             if (current == i) {
-        //     //                 text = '<span class="slider-dot-1-current">0</span>';
-        //     //             } else {
-        //     //                 text = '<span class="slider-dot-1">1</span>';
-        //     //             }
-        //     //         }
-        //     //         return text;
-        //     //     },
-
-        //         // renderBullet: function(swiper, current, total) {
-        //         //     for (let i = 1; i <= total; i++) {
-        //         //         if (current == i) {
-        //         //             text = '<span class="slider-dot-1-current"></span>';
-        //         //         } else {
-        //         //             text = '<span class="slider-dot-1"></span>';
-        //         //         }
-        //         //     }
-        //         //     return text;
-        //         // },
-
-        //     // Navigation arrows
-        //     // navigation: {
-        //     //     nextEl: '.swiper-button-next',
-        //     //     prevEl: '.swiper-button-prev',
-        //     // },
-        //     // paginationType: 'custom',
-            
-            
-        // })
-
-        // var mySwiper2 = new Swiper('.swiper-container-advantages', {
-        //     speed: 700,
-        //     loop: true,
-        //     spaceBetween: 20,
-        //     updateOnWindowResize: true,
-        //     slidesPerView: 1,
-        //     pagination: '.swiper-pagination',
-        //     paginationClickable: true,
-        //     pagination: {
-        //         el: '.swiper-pagination',
-        //         clickable: true,
-        //     },            
-        //     breakpoints: {
-        //         768: {
-        //             slidesPerView: 4,
-        //             noSwiping: false,
-        //             allowSlidePrev: false,
-        //             allowSlideNext: false,
-        //             pagination: false
-        //         },
-        //     }            
-        // })
-
-        // var mySwiper3 = new Swiper('.swiper-container-consultation', {
-        //     speed: 700,
-        //     loop: true,
-        //     // spaceBetween: 20,
-        //     // updateOnWindowResize: true,
-        //     slidesPerView: 1,
-        //     pagination: '.swiper-pagination',
-        //     paginationClickable: true,
-        //     pagination: {
-        //         el: '.swiper-pagination',
-        //         clickable: true,
-        //     },            
-        //     breakpoints: {
-        //         768: {
-        //             slidesPerView: 3,
-        //             noSwiping: false,
-        //             allowSlidePrev: false,
-        //             allowSlideNext: false,
-        //             pagination: false
-        //         },
-        //     }            
-        // })
 
       </script>
 </body>

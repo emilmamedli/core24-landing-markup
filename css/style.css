@@ -316,6 +316,10 @@ input[type="text"].pincode-input-text {
     background-color: #F2F2F2;
 }
 
+.bg-color-1 {
+    background-color: #DDEAD7;
+}
+
 .cicle-light img {
     display: inline-block;
     width: 1.5rem;
@@ -330,7 +334,13 @@ input[type="text"].pincode-input-text {
     font-weight: 400;
 }
 
+.text-custom-3 {
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
 #consultation {
+    padding-bottom: 5rem;
     background-color: #F3F6F3;
 }
 
@@ -341,16 +351,38 @@ input[type="text"].pincode-input-text {
     background-color: #FFFFFF;
 }
 
+.slider-consultation .slide {
+    width: 12rem;
+}
+
 .slider-card {
+    width: 94%;
+    margin-bottom: 3rem;
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+    text-align: center;
     border-radius: 0.5rem;
 }
 
-/* .slider-card-img {
-    
-} */
+.slider-card-img {
+    display: inline-block !important;
+    margin-bottom: 1.5rem;
+    width: 48%;
+}
 
 .slider-card-text {
     font-weight: 600;
+}
+
+#doctors {
+    /* padding-bottom: 5rem; */
+    background-color: #F3F6F3;
+}
+
+@media (min-width: 768px) {
+    .slider-card-shadow {
+        box-shadow: 0 1rem 2.5rem rgba(0, 0, 0, 0.1);
+    }
 }
 
 @media (max-width: 768px) {
