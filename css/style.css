@@ -5,6 +5,9 @@ html {
 body {
     font-family: 'Quicksand', sans-serif;
     position: relative;
+}
+
+body.with-nav {
     margin-top: 8rem;
 }
 
@@ -386,7 +389,7 @@ input[type="text"].pincode-input-text {
 }
 
 @media (max-width: 768px) {
-    body {
+    body.with-nav {
         margin-top: 4rem;
     }
 
@@ -399,4 +402,12 @@ input[type="text"].pincode-input-text {
         position: absolute;
         z-index: 1000;
     } */
+
+    .slider-main .slide {
+        padding-bottom: 7rem;
+    }
+    
+    .slider-main .slide { rgba(232, 245, 234, 0.81);
+        height: unset;
+    }
 }
