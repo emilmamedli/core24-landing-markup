@@ -255,6 +255,10 @@ input[type="text"].pincode-input-text {
     color: #000000;
 }
 
+.btn-custom-gray {
+    background-color: #F2F2F2;
+}
+
 .btn-bordered {
     box-shadow: 0 0 0.2rem 0 rgba(0, 0, 0, 0.25);
 }
@@ -384,6 +388,10 @@ input[type="text"].pincode-input-text {
     background-color: #FFFFFF;
 }
 
+.button-container-2 {
+    background-color: #F2F2F2;
+}
+
 .slider-consultation .slide {
     width: 12rem;
 }
@@ -416,7 +424,7 @@ input[type="text"].pincode-input-text {
     margin: 1rem;
     padding: 2rem;
     background-color: #FFFFFF;
-    border-radius: 1rem; 
+    border-radius: .7rem; 
 }
 
 .doctor-card-title {
@@ -486,6 +494,107 @@ input[type="text"].pincode-input-text {
 #partners {
     background-color: #F3F6F3;
 }
+
+.partners-img {
+    width: 90%;
+    height: 8rem;
+    padding-left: .5rem;
+    padding-right: .5rem;
+    border-radius: 0.7rem;
+    object-fit: contain;
+    background-color: #FFFFFF;
+}
+
+.partners-slider-text {
+    text-align: center;
+    font-size: .9rem;
+    font-weight: 700;
+}
+
+.btn-custom-3 {
+    color: #FFFFFF;
+    background-color: #212839;
+}
+
+#services {
+    background-color: #212839;
+}
+
+.tarif-label-first {
+    padding-bottom: 2.6rem;
+}
+
+.slider-title-3 {
+    margin-top: 5rem;
+    font-size: 3rem;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+.text-custom-4 {
+    font-weight: 200;
+    color: #F2F2F2;
+}
+
+#subscription {
+    padding-bottom: 5rem;
+}
+
+.subscription-container {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    border-radius: .7rem;
+}
+
+.subscription-container-main {
+    background-color: #F3F6F3;
+    padding-bottom: 5rem;
+}
+
+.subscription-container-1 {
+    background-color: #F2E5E5;
+}
+
+.subscription-container-2 {
+    background-color:#E5EAF2;
+}
+
+.subscription-container-3 {
+    background-color: #E6F2E5;
+}
+
+.subscription-container-main * {
+    padding-left: 2rem;
+}
+
+.slider-subscription .slide:not(:last-of-type) {
+    margin-right: 1rem;
+}
+
+.tarif-text {
+    font-weight: 500;
+}
+
+.tarif-text:first-child {
+    margin-top: 2rem;
+}
+
+.tarif-text:not(:last-of-type) {
+    box-shadow: 0px -1px 0px 0px rgba(0, 0, 0, 0.08) inset;
+}
+
+.tarif-price {
+    display: inline-block;
+    padding: .3rem;
+    padding-left: .6rem;
+    padding-right: .6rem;
+    font-size: .7rem;
+    font-weight: 500;
+    color: #FFFFFF;
+    background-color: #00AD9D;
+    border-radius: .4rem;
+}
+
 
 @media (min-width: 768px) {
 
