@@ -595,6 +595,142 @@ input[type="text"].pincode-input-text {
     border-radius: .4rem;
 }
 
+.service-card {
+    height: 22rem;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: .8rem;   
+}
+
+.service-card:nth-of-type(1) {
+    background-image: url(../image/diagnosis.jpg);
+}
+
+.service-card:nth-of-type(2) {
+    background-image: url(../image/naftalan.jpg);
+}
+
+.service-card-wrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.51) 100%);
+    border-radius: .8rem;   
+}
+
+#services {
+    padding-bottom: 5rem;
+}
+
+.card-block {
+    position: absolute;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 1rem;
+    bottom: 0;
+    color: #FFFFFF;
+}
+
+.service-card-title {
+    font-weight: 500;
+}
+
+.service-card-text {
+    font-weight: 200;
+}
+
+
+
+#faq {
+    padding-bottom: 5rem;
+}
+
+.panel-group {
+    width: 100%;
+}
+
+.panel-default:not(:last-of-type) {
+    box-shadow: 0px -1px 0px 0px rgba(0, 0, 0, 0.1) inset;
+}
+
+.panel-heading, .panel-body-container {
+    padding: 1rem 0;
+    padding-right: 4rem;
+}
+
+.panel-heading {
+    position: relative;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.panel-heading::after {
+    content: "";
+    width: 1rem;
+    height: 0.6rem;
+    color: #333;
+    top: 1.6rem;
+    right: 1.5rem;
+    position: absolute;
+    font-family: "FontAwesome";
+    background-image: url(../image/arrow-toggle-down.svg);
+    background-repeat: no-repeat;
+}
+
+.panel-heading-container {
+    width: 55%;
+}
+.panel-heading[aria-expanded="true"]::after {
+    background-image: url(../image/arrow-toggle-up.svg);
+}
+
+#contact {
+    padding-bottom: 2.5rem;
+    background-color: #F8F8F8;
+}
+
+.btn-custom-4 {
+    background-color: #64C96E;
+}
+
+.btn-custom-5 {
+    background-color: #0094FF;
+}
+
+.btn-custom-6 {
+    background-color: #DD4C3A;
+}
+
+.text-custom-5 {
+    color: #828282;
+    font-weight: 300;
+}
+
+.contact-text {
+    margin-left: 0.5rem;
+    margin-right: 2rem;
+}
+
+.btn-social {
+    width: 2.5rem;
+    height: 2.5rem;
+    padding-top: 0.5rem;
+    border-radius: 50%;
+    background-color: #F2F2F2;
+}
+
+.btn-social img {
+    display: inline-block;
+    width: 1rem;
+}
+
+footer section:last-of-type {
+    box-shadow: 0px 1px 0px 0px rgb(0,0,0,0.08) inset;
+}
+}
 
 @media (min-width: 768px) {
 
