@@ -8,8 +8,21 @@ body {
     position: relative;
 }
 
+a, a:hover {
+    text-decoration: none;
+}
+
+.btn:hover {
+    opacity: .85;
+    border: 1px solid rgba(0,0,0,.15);
+}
+
 body.with-nav {
-    margin-top: 8rem;
+    margin-top: 7rem;
+}
+
+#advantages, #consultation, #how-it-works, #doctors, #about, #partners, #subscription, #services, #faq, #contact {
+    padding-top: 8rem;
 }
 
 .logo {
@@ -275,7 +288,7 @@ input[type="text"].pincode-input-text {
 }
 
 .nav-item {
-    margin-right: 3rem;
+    margin-right: 1%;
 }
 
 .nav-link {
@@ -305,7 +318,7 @@ input[type="text"].pincode-input-text {
 }
 
 .slider-title-2 {
-    margin-top: 5rem;
+    /* margin-top: 5rem; */
     font-size: 2.6rem;
     font-weight: 700;
 }
@@ -343,6 +356,10 @@ input[type="text"].pincode-input-text {
 .text-custom-1 {
     font-weight: 300;
     color: #333333;
+}
+
+.text-black {
+    color: #000000!important;
 }
 
 .cicle-light {
@@ -415,6 +432,10 @@ input[type="text"].pincode-input-text {
     font-weight: 600;
 }
 
+#advantages {
+    padding-bottom: 5rem;
+}
+
 #doctors {
     padding-bottom: 5rem;
     background-color: #F3F6F3;
@@ -448,7 +469,7 @@ input[type="text"].pincode-input-text {
 .btn-round {
     width: 3rem;
     height: 3rem;
-    padding-left: 1rem;
+    padding-left: 1.1rem;
     border-radius: 50%;
     text-align: center;
 }
@@ -457,7 +478,7 @@ input[type="text"].pincode-input-text {
     width: 60%;
 }
 
-.btn-left img {
+.btn-left {
     transform: rotate(180deg);
 }
 
@@ -525,7 +546,7 @@ input[type="text"].pincode-input-text {
 }
 
 .slider-title-3 {
-    margin-top: 5rem;
+    /* margin-top: 5rem; */
     font-size: 3rem;
     font-weight: 700;
     color: #FFFFFF;
@@ -730,6 +751,17 @@ input[type="text"].pincode-input-text {
 footer section:last-of-type {
     box-shadow: 0px 1px 0px 0px rgb(0,0,0,0.08) inset;
 }
+
+#phone-icon {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+}
+
+.bg-red {
+    background-color: rgb(235,87,87) !important;
+    box-shadow: 0 .9rem .9rem 0 rgba(0,0,0,0.12);
+
 }
 
 @media (min-width: 768px) {
@@ -738,8 +770,44 @@ footer section:last-of-type {
         min-width: 90%
     }
 
+    #main-nav-2 {
+        padding-bottom: 0;
+    }
+
+    .nav-item .nav-link:after {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: transparent;
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px;
+        height: 3px;
+        -webkit-transition-property: all;
+        transition-property: all;
+        -webkit-transition-duration: 0.1s;
+        transition-duration: 0.1s;
+        -webkit-transition-timing-function: ease-out;
+        transition-timing-function: ease-out;
+    }
+
+    .nav-item .nav-link.active:after {
+        background:  #000000;
+    }
+
     .slider-card-shadow {
         box-shadow: 0 1rem 2.5rem rgba(0, 0, 0, 0.1);
+    }
+
+    .slider-about-image {
+        width: 90%;
+        height: 90%;
+    }
+
+    .slider-advantages .slide  {
+        padding: 2rem;
     }
 
     .block-with-arrow {
@@ -781,7 +849,7 @@ footer section:last-of-type {
         margin-top: 4rem;
     }
 
-    /* #navbar-container {
+    #navbar-container {
         top: 0;
         left: 1000rem;
         bottom: 0;
@@ -789,7 +857,7 @@ footer section:last-of-type {
         background-color: #FFFFFF;
         position: absolute;
         z-index: 1000;
-    } */
+    }
 
     .slider-main .slide {
         padding-bottom: 7rem;
