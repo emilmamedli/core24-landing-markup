@@ -71,10 +71,11 @@ $(document).ready(function() {
     });
 
     $('.slider-doctors').slick({
-        infinite: true,
+        infinite: false,
         speed: 500,
         dots: true,
         centerMode: false,
+        variableWidth: false,
         // appendDots: $(this).siblings('.dots-container'),
         prevArrow: $('.btn-left'),
         nextArrow: $('.btn-right'),
@@ -87,6 +88,7 @@ $(document).ready(function() {
                     slidesToShow: 1,
                     slidesToScroll: 1,
                     centerMode: true,
+                    variableWidth: true,
                 }
             }
         ]
@@ -140,7 +142,7 @@ $(document).ready(function() {
     });
 
     $('.slider-subscription').slick({
-        // infinite: true,
+        infinite: false,
         speed: 500,
         dots: true,
         // appendDots: $(this).siblings('.dots-container'),
@@ -177,6 +179,13 @@ $(document).ready(function() {
         } else {
             $(this).find('.burger').addClass('open');
             $('body').addClass('menu-active');
+        }
+    })
+
+    $('.nav-link').on('click', function() {
+        if ($('body').hasClass('menu-active')) {
+            $('.burger').removeClass('open');
+            $('body').removeClass('menu-active');
         }
     })
 
