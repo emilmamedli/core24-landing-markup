@@ -49,17 +49,17 @@
       top: 1em;
       width: 3em; }
 .burger.burger-squeeze .burger-lines, .burger.burger-squeeze .burger-lines:after, .burger.burger-squeeze .burger-lines:before {
-  -webkit-transition: .2s top .2s, .1s left, .2s transform, .4s background-color .2s;
-  -o-transition: .2s top .2s, .1s left, .2s transform, .4s background-color .2s;
-  transition: .2s top .2s, .1s left, .2s transform, .4s background-color .2s; }
+  -webkit-transition: .2s top .2s, .2s transform;
+  -o-transition: .2s top .2s, .2s transform;
+  transition: .2s top .2s, .2s transform; }
 
 .burger.burger-squeeze.open .burger-lines:after, .burger.burger-squeeze.open .burger-lines:before {
   width: 2em; }
 
 .burger.burger-squeeze.open .burger-lines, .burger.burger-squeeze.open .burger-lines:after, .burger.burger-squeeze.open .burger-lines:before {
-  -webkit-transition: .2s background-color, .2s top, .2s left, .2s transform .15s;
-  -o-transition: .2s background-color, .2s top, .2s left, .2s transform .15s;
-  transition: .2s background-color, .2s top, .2s left, .2s transform .15s; }
+  -webkit-transition: .2s top, .2s transform .15s;
+  -o-transition: .2s top, .2s transform .15s;
+  transition: .2s top, .2s transform .15s; }
 
 .burger.burger-squeeze.open .burger-lines {
   background-color: transparent; }
