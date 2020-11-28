@@ -802,6 +802,10 @@ footer section:last-of-type {
     background-color: #5FC98B;
 }
 
+.footer-text, .footer-text a {
+    color: #828282 !important;
+}
+
 @media (min-width: 768px) {
 
     html {
@@ -827,12 +831,7 @@ footer section:last-of-type {
         border-top-left-radius: 3px;
         border-top-right-radius: 3px;
         height: 3px;
-        -webkit-transition-property: all;
-        transition-property: all;
-        -webkit-transition-duration: 0.1s;
-        transition-duration: 0.1s;
-        -webkit-transition-timing-function: ease-out;
-        transition-timing-function: ease-out;
+        transition: all 0.1s ease-out;
     }
 
     .nav-item .nav-link.active:after {
@@ -909,54 +908,6 @@ footer section:last-of-type {
     body.with-nav {
         margin-top: 4rem;
     }
-    
-    /* #navbar-container {
-        position: absolute;
-        background-color: #FFFFFF;
-        top: 0;
-        bottom: 0;
-        right: 0;
-        left: 1000rem;
-        height: 100vh;
-        width: 100vw;
-        z-index: 100;
-        -webkit-transition-property: left;
-        transition-property: left;
-        -webkit-transition-duration: .5s;
-        transition-duration: .5s;
-        -webkit-transition-timing-function: ease-in-out;
-        transition-timing-function: ease-in-out;
-    }
-    
-    body.menu-active #navbar-container {
-        left: 0;
-    } */
-
-    /* #navbar-container {
-        position: absolute;
-        background-color: #FFFFFF;
-        top: 0;
-        bottom: 0;
-        right: 0;
-        left: 0;
-        height: 100vh;
-        width: 100vw;
-        z-index: 100;
-        -webkit-transition-property: all;
-        transition-property: all;
-        -webkit-transition-duration: .5s;
-        transition-duration: .5s;
-        -webkit-transition-timing-function: ease-in-out;
-        transition-timing-function: ease-in-out;
-        opacity: 0;
-        transform: translateY(-1000px);
-    }
-    
-    body.menu-active #navbar-container {
-        transform: translateY(0);
-        left: 0;
-        opacity: 1;
-    } */
 
     #navbar-container {
         position: absolute;
@@ -968,8 +919,8 @@ footer section:last-of-type {
         height: 100vh;
         width: 100vw;
         z-index: 100;
-        transition: transform .5s ease-in-out, opacity .3s ease-in-out;
-        opacity: .7;
+        transition: transform .5s ease-in, opacity .3s ease-in;
+        opacity: .8;
         transform: translateY(-1000px);
     }
     
