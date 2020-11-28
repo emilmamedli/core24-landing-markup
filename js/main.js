@@ -169,4 +169,16 @@ $(document).ready(function() {
     });
 
 
+
+    $('.btn-burger').on('click', function() {
+        if ($('body').hasClass('menu-active')) {
+            $(this).find('.burger').removeClass('open');
+            $('body').removeClass('menu-active');
+        } else {
+            $(this).find('.burger').addClass('open');
+            $('body').addClass('menu-active');
+        }
+    })
+
+
 });
