@@ -910,7 +910,7 @@ footer section:last-of-type {
         margin-top: 4rem;
     }
     
-    #navbar-container {
+    /* #navbar-container {
         position: absolute;
         background-color: #FFFFFF;
         top: 0;
@@ -930,6 +930,53 @@ footer section:last-of-type {
     
     body.menu-active #navbar-container {
         left: 0;
+    } */
+
+    /* #navbar-container {
+        position: absolute;
+        background-color: #FFFFFF;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        height: 100vh;
+        width: 100vw;
+        z-index: 100;
+        -webkit-transition-property: all;
+        transition-property: all;
+        -webkit-transition-duration: .5s;
+        transition-duration: .5s;
+        -webkit-transition-timing-function: ease-in-out;
+        transition-timing-function: ease-in-out;
+        opacity: 0;
+        transform: translateY(-1000px);
+    }
+    
+    body.menu-active #navbar-container {
+        transform: translateY(0);
+        left: 0;
+        opacity: 1;
+    } */
+
+    #navbar-container {
+        position: absolute;
+        background-color: #FFFFFF;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        height: 100vh;
+        width: 100vw;
+        z-index: 100;
+        transition: transform .5s ease-in-out, opacity .3s ease-in-out;
+        opacity: .7;
+        transform: translateY(-1000px);
+    }
+    
+    body.menu-active #navbar-container {
+        transform: translateY(0);
+        left: 0;
+        opacity: 1;
     }
 
     .slider-main .slide {
