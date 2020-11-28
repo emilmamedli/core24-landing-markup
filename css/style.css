@@ -676,11 +676,11 @@ input[type="text"].pincode-input-text {
     border-radius: .8rem;   
 }
 
-.service-card:nth-of-type(1) {
+.service-card {
     background-image: url(../image/diagnosis.jpg);
 }
 
-.service-card:nth-of-type(2) {
+.service-card-2 {
     background-image: url(../image/naftalan.jpg);
 }
 
