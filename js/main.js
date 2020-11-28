@@ -11,7 +11,7 @@ $(document).ready(function() {
         dots: true,
         // appendDots: $(this).siblings('.dots-container'),
         customPaging: function(slider, i) {
-            return '<div class="slider-dot-1"></div>';
+            return '<div class="slider-dot slider-dot-1"></div>';
         },
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -28,6 +28,9 @@ $(document).ready(function() {
         slidesToScroll: 4,
         swipe: false,
         dots: false,
+        customPaging: function(slider, i) {
+            return '<div class="slider-dot slider-dot-2"></div>';
+        },
         responsive: [                    
             {
                 breakpoint: 768,
@@ -53,6 +56,9 @@ $(document).ready(function() {
         variableWidth: false,
         swipe: false,
         dots: false,
+        customPaging: function(slider, i) {
+            return '<div class="slider-dot slider-dot-3"></div>';
+        },
         responsive: [                    
             {
                 breakpoint: 768,
@@ -75,7 +81,7 @@ $(document).ready(function() {
         speed: 500,
         dots: true,
         centerMode: false,
-        variableWidth: false,
+        variableWidth: true,
         // appendDots: $(this).siblings('.dots-container'),
         prevArrow: $('.btn-left'),
         nextArrow: $('.btn-right'),
