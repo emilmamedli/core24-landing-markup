@@ -80,6 +80,9 @@ $(document).ready(function() {
         infinite: false,
         speed: 500,
         dots: true,
+        customPaging: function(slider, i) {
+            return '<div class="slider-dot slider-dot-4"></div>';
+        },
         centerMode: false,
         variableWidth: true,
         // appendDots: $(this).siblings('.dots-container'),
@@ -121,6 +124,9 @@ $(document).ready(function() {
         infinite: true,
         speed: 500,
         dots: true,
+        customPaging: function(slider, i) {
+            return '<div class="slider-dot slider-dot-5"></div>';
+        },
         arrows: false,
         // appendDots: $(this).siblings('.dots-container'),
         slidesToShow: 1,
@@ -132,6 +138,9 @@ $(document).ready(function() {
         infinite: true,
         speed: 500,
         dots: true,
+        customPaging: function(slider, i) {
+            return '<div class="slider-dot slider-dot-4"></div>';
+        },
         arrows: false,
         // appendDots: $(this).siblings('.dots-container'),
         slidesToShow: 6,
@@ -151,6 +160,9 @@ $(document).ready(function() {
         infinite: false,
         speed: 500,
         dots: true,
+        customPaging: function(slider, i) {
+            return '<div class="slider-dot slider-dot-4"></div>';
+        },
         // appendDots: $(this).siblings('.dots-container'),
         arrows: false,
         slidesToShow: 3,

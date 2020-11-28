@@ -17,7 +17,7 @@ body.with-nav {
     margin-top: 7rem;
 }
 
-#advantages, #consultation, #how-it-works, #doctors, #about, #partners, #subscription, #services, #faq, #contact {
+#advantages, #consultation, #how-it-works, #doctors-main, #about, #partners, #subscription, #services, #faq, #contact {
     padding-top: 8rem;
 }
 
@@ -332,22 +332,25 @@ input[type="text"].pincode-input-text {
     display: inline-block;
     width: .5rem;
     height: .5rem;
-    margin-bottom: .25rem;
+    margin-bottom: .05rem;
     background-repeat: no-repeat;
     background-size: contain;
 }
 
 .slick-active > .slider-dot {
-    width: 1rem;
-    height: 1rem;
+    width: .7rem;
+    height: .7rem;
     margin: 0;
 }
 
 .slider-dot-1 {
+    margin-bottom: .25rem;
     background-image: url(../image/slider-dot-1.svg);
 }
 
 .slick-active > .slider-dot-1 {
+    width: 1rem;
+    height: 1rem;
     background-image: url(../image/slider-dot-1-current.svg);
 }
 
@@ -365,6 +368,22 @@ input[type="text"].pincode-input-text {
 
 .slick-active > .slider-dot-3 {
     background-image: url(../image/slider-dot-3-current.svg);
+}
+
+.slider-dot-4 {
+    background-image: url(../image/slider-dot-4.svg);
+}
+
+.slick-active > .slider-dot-4 {
+    background-image: url(../image/slider-dot-4-current.svg);
+}
+
+.slider-dot-5 {
+    background-image: url(../image/slider-dot-5.svg);
+}
+
+.slick-active > .slider-dot-5 {
+    background-image: url(../image/slider-dot-2-current.svg);
 }
 
 
@@ -463,8 +482,7 @@ input[type="text"].pincode-input-text {
     padding-bottom: 5rem;
 }
 
-#doctors {
-    padding-bottom: 5rem;
+#doctors-main {    
     background-color: #F3F6F3;
 }
 
@@ -473,6 +491,13 @@ input[type="text"].pincode-input-text {
     padding: 2rem;
     background-color: #FFFFFF;
     border-radius: .7rem; 
+}
+
+.doctor-avatar {
+    width: 4.5rem;
+    height: 4.5rem;
+    border-radius: 50%;
+    object-fit: fill;
 }
 
 .doctor-card-title {
@@ -812,6 +837,12 @@ footer section:last-of-type {
 
 .footer-text, .footer-text a {
     color: #828282 !important;
+}
+
+#doctors {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    background-color: #F2F2F2;
 }
 
 @media (min-width: 768px) {
