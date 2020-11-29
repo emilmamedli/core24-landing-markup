@@ -186,6 +186,7 @@ input[type="text"].pincode-input-text {
 
 .button-container-scrollable {
     overflow-x: auto;
+    white-space: nowrap;
 }
 
 .button-container-scrollable::-webkit-scrollbar {
@@ -817,7 +818,7 @@ footer section:last-of-type {
     height: 3rem;
     padding-top: 0.7rem;
     border-radius: 50%;
-    background-color: rgb(235,87,87) !important;
+    background-color: rgb(235,87,87);
     box-shadow: 0 .9rem .9rem 0 rgba(0,0,0,0.12);
 }
 
@@ -880,8 +881,8 @@ footer section:last-of-type {
     width: 1.5rem;
 }
 
-.circle-call {
-    background-color: #212839 !important;
+.circle-call.circle-call-corporate {
+    background-color: #212839;
 }
 
 .partner-card-mini {
