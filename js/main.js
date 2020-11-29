@@ -84,7 +84,6 @@ $(document).ready(function() {
             return '<div class="slider-dot slider-dot-4"></div>';
         },
         centerMode: false,
-        variableWidth: true,
         // appendDots: $(this).siblings('.dots-container'),
         prevArrow: $('.btn-left'),
         nextArrow: $('.btn-right'),
@@ -97,7 +96,6 @@ $(document).ready(function() {
                     slidesToShow: 1,
                     slidesToScroll: 1,
                     centerMode: true,
-                    variableWidth: true,
                 }
             }
         ]
