@@ -1093,6 +1093,10 @@ footer section:last-of-type {
         min-width: 20rem;
     }
 
+    .partner-img-cont {
+        height: 32rem;
+    }
+
     .partner-text {        
         left: 5%;
         width: 90%;
