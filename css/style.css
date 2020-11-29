@@ -847,6 +847,39 @@ footer section:last-of-type {
     background-color: #F2F2F2;
 }
 
+#advantages.advantages-coporate {
+    background-color: #212839;
+    color: #FFFFFF;
+}
+
+#advantages.advantages-coporate img {
+    color: #FFFFFF;
+}
+
+#services.services-coporate {
+    background-color: #FFFFFF;
+}
+
+.slider-main-corporate .slide {
+    background: none;
+    background-image: url(../image/corparate-slide-1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.cicle-color {
+    width: 4rem;
+    height: 4rem;
+    padding-top: 1.2rem;
+    border-radius: 50%;
+    background-color: #5FC98B;
+}
+
+.cicle-color img {
+    display: inline-block;
+    width: 1.5rem;
+}
+
 @media (min-width: 768px) {
 
     html {
@@ -967,7 +1000,7 @@ footer section:last-of-type {
         z-index: 100;
         transition: transform .5s ease-in, opacity .3s ease-in;
         opacity: .8;
-        transform: translateY(-1000px);
+        transform: translateY(-1500px);
     }
     
     body.menu-active #navbar-container {
@@ -998,6 +1031,5 @@ footer section:last-of-type {
         width: 65vw;
         min-width: 20rem;
     }
-
 
 }
