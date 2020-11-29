@@ -884,6 +884,11 @@ footer section:last-of-type {
     .slider-about-image {
         width: 90%;
         height: 90%;
+        margin: auto;
+    }
+
+    .slider-about .slick-dots {
+        bottom: 5vw;
     }
 
     .slider-advantages .slide  {
@@ -975,6 +980,11 @@ footer section:last-of-type {
     
     .slider-main .slide { rgba(232, 245, 234, 0.81);
         height: unset;
+    }
+
+    .slider-about-container {
+        width: 90vw;
+        height: 90vw;
     }
 
     .slider-subscription .slide {
