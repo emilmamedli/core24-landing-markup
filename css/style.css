@@ -1074,7 +1074,7 @@ footer section:last-of-type {
         padding-bottom: 7rem;
     }
     
-    .slider-main .slide { rgba(232, 245, 234, 0.81);
+    .slider-main .slide { 
         height: unset;
     }
 
@@ -1105,6 +1105,15 @@ footer section:last-of-type {
 
     .partner-text img {        
         mix-blend-mode: multiply;
+    }
+
+    .footer-text {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .footer-text > * {
+        margin: .5rem;
     }
 
 }
