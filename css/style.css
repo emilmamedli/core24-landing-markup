@@ -6,6 +6,7 @@ body {
 
 a, a:hover {
     text-decoration: none;
+    color: unset;
 }
 
 .btn:hover {
@@ -13,8 +14,16 @@ a, a:hover {
     border: 1px solid rgba(0,0,0,.15);
 }
 
+a.btn {
+    padding-top: .55rem;
+}
+
+body.with-header {
+    margin-top: 4rem;
+}
+
 body.with-nav {
-    margin-top: 7rem;
+    margin-top: 8rem;
 }
 
 #advantages, #consultation, #how-it-works, #doctors-main, #about, #partners, #subscription, #services, #faq, #contact {
@@ -266,8 +275,41 @@ input[type="text"].pincode-input-text {
 }
 
 .btn-custom-gray {
+    font-size: 1rem;
+    font-weight: 500;
+    color: black;
     background-color: #F2F2F2;
 }
+
+.btn-custom-gray.active {
+    color: #FFFFFF;
+    background-color: #00AD9D;
+}
+
+.btn-custom-gray.active-dark {
+    color: #FFFFFF;
+    background-color: #212839;
+}
+
+.btn-custom-gray.active img{
+    filter: contrast(2) invert(100%);
+}
+
+.btn-custom-gray p, .btn-custom-gray span {
+    margin: .1rem
+}
+
+.btn-custom-gray span {
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: #828282;
+}
+
+.btn-custom-gray.active span {
+    color: #FFFFFF;
+}
+
+
 
 .btn-bordered {
     box-shadow: 0 0 0.2rem 0 rgba(0, 0, 0, 0.25);
@@ -622,6 +664,12 @@ input[type="text"].pincode-input-text {
     border-radius: .7rem;
 }
 
+.subscription-container-white {
+    margin: 1rem;
+    background-color: #FFFFFF;
+    border-radius: .7rem;
+}
+
 .subscription-container-main {
     background-color: #F3F6F3;
     padding-bottom: 5rem;
@@ -645,6 +693,10 @@ input[type="text"].pincode-input-text {
 
 .slider-subscription .slide:not(:last-of-type) {
     margin-right: 1rem;
+}
+
+.tarif-label {
+    margin-bottom: 1rem;
 }
 
 .tarif-text {
@@ -843,7 +895,7 @@ footer section:last-of-type {
 }
 
 #doctors {
-    padding-top: 5rem;
+    padding-top: 3rem;
     padding-bottom: 5rem;
     background-color: #F2F2F2;
 }
@@ -939,6 +991,106 @@ footer section:last-of-type {
 
 .partner-card-mini img {
     height: 3rem;
+}
+
+.step-container {
+    position: relative;
+}
+
+.step-container:not(:first-of-type) {
+    margin-left: 3.6rem;
+}
+
+.step-container:not(:last-of-type):after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -2.8rem;
+    width: 2rem;
+    height: .5rem;
+    background-image: url(../image/line-dotted-gray.svg);
+    background-repeat: repeat-x;
+    background-size: contain;
+    background-position: 0.3rem top;
+}
+
+.btn-step, .step-label {
+    font-size: .9rem;
+    font-weight: 700;
+    text-align: center;
+    color: #BDBDBD;
+}
+
+.step-container.active .btn-step, .step-container.active .step-label {
+    font-size: .9rem;
+    font-weight: 700;
+    text-align: center;
+    color: #000000;
+}
+
+.btn-step {
+    width: 2.5rem;
+    height: 2.5rem;    
+    border-radius: 50%;
+    background-color: #E0E0E0;
+}
+
+.step-container.active .btn-step {
+    width: 2.5rem;
+    height: 2.5rem;    
+    border-radius: 50%;
+    background-color: #FFFFFF;
+}
+
+.step-label {
+    margin-left: .7rem;
+    cursor: pointer;
+}
+
+.white-card {
+    margin: 1rem;
+    padding: 2rem;
+    background-color: #FFFFFF;
+    border-radius: .7rem;
+}
+
+.white-card-title {
+    font-size: 1.7rem;
+    font-weight: 700;
+}
+
+.white-card-title-text {
+    font-size: .9rem;
+    font-weight: 400;
+    color: #828282;
+}
+
+.order-block {
+    margin: 2rem 0;
+    padding-bottom: 1.3rem;
+}
+
+.order-block:not(:last-of-type) {
+    border-bottom: 1px solid #F2F2F2;
+}
+
+.bank-card-block {
+    position: relative;
+    margin: auto;
+    width: 100%;
+    max-width: 43rem;
+    height: 25rem;
+    background: rgb(45,119,245);
+    background: linear-gradient(105deg, rgba(45,119,245,1) 0%, rgba(45,119,245,1) 30%, rgba(255,255,255,1) 30%);
+}
+
+.btn-login-blue {
+    width: 100%;
+    height: 2.5rem;
+    background-color: #2D77F5;
+    font-size: .9rem;
+    font-weight: 700;
+    color: #FFFFFF;
 }
 
 @media (min-width: 768px) {
@@ -1114,6 +1266,12 @@ footer section:last-of-type {
 
     .footer-text > * {
         margin: .5rem;
+    }
+
+    .bank-card-block {
+        margin-top: 7rem;
+        padding-top: 2.5rem;
+        height: fit-content;
     }
 
 }
